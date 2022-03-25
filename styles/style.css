@@ -7,15 +7,25 @@
    
    body {
      background-color: #64A6BD;
+     background-image: url("pwBG.jpg");
+     background-size: cover;
+     background-position: center;
      justify-content: center;
      align-items: center;
      display: flex;
      min-height: 100vh;
        }
 .box {
+    border: solid 2px rgb(81, 62, 255);
     background-color: #efefef;
+    background-image: url("pwBG.jpg");
+     background-size: cover;
+     background-position: center;
     padding-left: 60px;
     padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .box h2 {
@@ -40,22 +50,19 @@
      font-size: 26px;
  }
 
- #btnGen {
-     display: flex;
+ #btnGen, #charLen {
      font-size: 20px;
      font-weight: 500;
      background-color: #64A6BD;
+     background-image: radial-gradient(black, rgb(46, 44, 44), black);
      color: #c2095a;
-     justify-content: center;
      cursor: pointer;
-     text-align: center;
-     margin-top: 40px;
-     width: 150px;
-     height: 50px;
-     padding-top: 10px;
-     margin-left: 30%;
+     width: 100px;
+     height: 100px;
+     border-radius: 20%;
+     transition: all 0.5s ease-in-out;
  }
- #btnGen:hover {
+ #btnGen:hover, #charLen:hover {
      color: #f5ff90;
      background-color: #136f63;
  }
@@ -65,3 +72,16 @@
      align-items: center;
      justify-content: center;
  }
+
+ .extras div label{
+    background-color: rgba(150, 150, 250, .6);
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #c2095a;
+    transition: all 0.2s ease-in-out;
+ }
+
+ .extras div label:hover {
+    color: #f5ff90;
+ }
+ 
