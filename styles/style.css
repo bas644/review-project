@@ -3,24 +3,23 @@
     padding: 0;
     user-select: none;
     box-sizing: border-box;
-     }
+}
    
-   body {
-     background-color: #64A6BD;
-     background-image: url("pwBG.jpg");
-     background-size: cover;
-     background-position: center;
-     justify-content: center;
-     align-items: center;
-     display: flex;
-     min-height: 100vh;
-       }
+body {
+    background-image: url("pwBG.jpg");
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+}
+
 .box {
     border: solid 2px rgb(81, 62, 255);
-    background-color: #efefef;
-    background-image: url("pwBG.jpg");
-     background-size: cover;
-     background-position: center;
+    backdrop-filter: blur(15px);    
+    background-size: cover;
+    background-position: center;   
     padding-left: 60px;
     padding: 60px;
     display: flex;
@@ -30,10 +29,10 @@
 
 .box h2 {
     margin-bottom: 40px;
-   text-align: center;
-   font-size: 26px;
-   color: #c2095a;
-   font-family: sans-serif;
+    text-align: center;
+    font-size: 26px;
+    color: #c2095a;
+    font-family: sans-serif;
 }
 #password {
     padding: 20px;
@@ -46,42 +45,42 @@
     outline: none;
     font-size: 22px;
 }
- #password ::placeholder {
-     font-size: 26px;
- }
 
- #btnGen, #charLen {
-     font-size: 20px;
-     font-weight: 500;
-     background-color: #64A6BD;
-     background-image: radial-gradient(black, rgb(46, 44, 44), black);
-     color: #c2095a;
-     cursor: pointer;
-     width: 100px;
-     height: 100px;
-     border-radius: 20%;
-     transition: all 0.5s ease-in-out;
- }
+#password ::placeholder {
+    font-size: 26px;
+}
+
+#btnGen, #charLen {
+    font-size: 20px;
+    font-weight: 500;
+    background-image: radial-gradient(black, rgb(46, 44, 44), black);
+    color: #c2095a;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    transition: all 0.5s ease-in-out;
+}
+
  #btnGen:hover, #charLen:hover {
      color: #f5ff90;
-     background-color: #136f63;
- }
+}
 
- .extras div {
-     display: flex;
-     align-items: center;
-     justify-content: center;
- }
+.extras div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
- .extras div label{
-    background-color: rgba(150, 150, 250, .6);
+.extras div label{
     font-size: 1.3rem;
     font-weight: bold;
     color: #c2095a;
     transition: all 0.2s ease-in-out;
- }
+    margin-right: 10px;
+}
 
- .extras div label:hover {
+.extras div label:hover {
     color: #f5ff90;
- }
+}
  
