@@ -17,6 +17,24 @@
                 id="password"
                 readonly
             />
+            <div class="extras">
+                <div class="forNumbers">
+                    <label for="numbers">Numbers:</label>
+                    <input type="checkbox" name="numbers" id="numbers">
+                </div>
+                <div class="forUpper">
+                    <label for="uppercase">Uppercase Letters:</label>
+                    <input type="checkbox" name="uppercase" id="uppercase">
+                </div>                
+                <div class="forSpecialChar">
+                    <label for="specialChar">Special Characters:</label>
+                    <input type="checkbox" name="specialChar" id="specialChar">
+                </div>
+                <br>
+                <div class="forCharLen">
+                    <button name="charLen" id="charLen">Custom Password Length</button>
+                </div>                    
+            </div>
             <button id="btnGen">Generate</button>
         </div>
         <script src="script.js"></script>

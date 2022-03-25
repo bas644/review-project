@@ -25,7 +25,7 @@
    color: #c2095a;
    font-family: sans-serif;
 }
-input {
+#password {
     padding: 20px;
     user-select: none;
     height: 50px;
@@ -36,7 +36,7 @@ input {
     outline: none;
     font-size: 22px;
 }
- input ::placeholder {
+ #password ::placeholder {
      font-size: 26px;
  }
 
@@ -58,4 +58,10 @@ input {
  #btnGen:hover {
      color: #f5ff90;
      background-color: #136f63;
+ }
+
+ .extras div {
+     display: flex;
+     align-items: center;
+     justify-content: center;
  }
