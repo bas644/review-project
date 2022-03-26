@@ -12,52 +12,49 @@ body {
     justify-content: center;
     align-items: center;
     display: flex;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .box {
     border: solid 2px rgb(81, 62, 255);
     backdrop-filter: blur(15px);    
     background-size: cover;
-    background-position: center;   
-    padding-left: 60px;
-    padding: 60px;
+    background-position: center; 
+    padding: .5rem;  
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .box h2 {
-    margin-bottom: 40px;
     text-align: center;
-    font-size: 26px;
+    font-size: 2rem;
     color: #c2095a;
     font-family: sans-serif;
 }
 #password {
-    padding: 20px;
+    padding: 0.2rem;
     user-select: none;
-    height: 50px;
-    width: 400px;
-    border-radius: 6px;
+    height: 3rem;
+    width: 24rem;
+    border-radius: 0.5rem;
     border: none;
     border: 2px solid #64A6BD;
     outline: none;
-    font-size: 22px;
 }
 
 #password ::placeholder {
-    font-size: 26px;
+    font-size: 1.5rem;
 }
 
 #btnGen, #charLen {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     background-image: radial-gradient(black, rgb(46, 44, 44), black);
     color: #c2095a;
     cursor: pointer;
-    width: 100px;
-    height: 100px;
+    width: 6rem;
+    height: 6rem;
     border-radius: 20%;
     transition: all 0.5s ease-in-out;
 }

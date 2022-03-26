@@ -68,16 +68,30 @@ upperEle.addEventListener('click', selectCharsArray);
 specEle.addEventListener('click', selectCharsArray);
 
 
+let password = document.getElementById("password")
+
 
 // create a global variable called "pwLength" with a number between 10 and 18
 let pwLengthArr = Array.from({length:9}, (v,k) => k + 10);
 const custButton = document.getElementById('charLen');
 let useCustomCharLength = false;
 let pwLength = pwLengthArr[Math.floor(Math.random() * 8)];
+setPasswordFontsize()
+
+function setPasswordFontsize() {
+    if(pwLength >= 40){
+        password.style.fontSize = '77%';
+    } else if(pwLength >= 26){
+        password.style.fontSize = '100%';
+    } else {
+        password.style.fontSize = '150%';
+    }
+}
 
 function randoLen(){
     if(!useCustomCharLength){
         pwLength = pwLengthArr[Math.floor(Math.random() * 8)];
+        setPasswordFontsize()
     }
 }
 
@@ -100,11 +114,12 @@ function charLenPopUp() {
             pwLenFailed = true;
             alert(`You don't want to spend all day typing a password that is ${pwLength} long!`);
         } else {
-            pwLength = parseInt(pwLength)
+            pwLength = parseInt(pwLength)            
             useCustomCharLength = true;
             pwLenFailed = false;
+            setPasswordFontsize()
         }
-    } while (pwLenFailed);
+    } while (pwLenFailed);    
 }
 
 custButton.addEventListener('click', charLenPopUp);
@@ -163,7 +178,7 @@ function addNewPassword(){
 
 let genBtn = document.getElementById("btnGen");
 let buttonHandler = () => {
-    document.getElementById("password").value = addNewPassword();
+    password.value = addNewPassword();
 };
 // Event listener for generate PW button
 genBtn.addEventListener("click", buttonHandler);
