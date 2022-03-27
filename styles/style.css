@@ -50,7 +50,7 @@ body {
 #btnGen, #charLen {
     font-size: 1.25rem;
     font-weight: 500;
-    background-image: radial-gradient(black, rgb(46, 44, 44), black);
+    background-image: radial-gradient(black, black, black);
     color: #c2095a;
     cursor: pointer;
     width: 6rem;
@@ -61,6 +61,7 @@ body {
 
  #btnGen:hover, #charLen:hover {
      color: #f5ff90;
+     background-image: radial-gradient(black, rgb(46, 44, 44), black);
 }
 
 .extras div {
